@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href='./New folder/bootstrap.min.css'>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href='./css/oop.css'>
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class=" welcome">
+        <h1 class="py-5  text-center position-relative border-bottom-0 "> Bookmarker</h1>
+ </div>
+ <div class="main mt-2"></div>
+<div class="Bookmark p-3 py-4 mt-2 d-flex justify-content-center align-items-center gap-4 ">
+    <h2>
+   <i class="fa-solid fa-bookmark"></i>
+     Bookmark <span> your favorite sites</span> 
+   <i class="fa-solid fa-bookmark"></i>
+</h2>
+</div>
+
+
+<div class="w-100 mx-auto rounded mt-3 ">
+    <label for="productNameInput" class=" mb-2"> 
+<i class="fa-solid fa-book"></i>
+         Site Name
+    </label>
+<input oninput="validationName()" type="text" id="productNameInput" placeholder="Website Name" class="form-control  ">
+</div>
+
+
+<div class="w-100 mx-auto rounded  mt-3">
+    <label for="productUrlInput" class=" mb-2"> 
+<i class="fa-solid fa-link"></i>
+      Site URL
+    </label>
+<input oninput="validationUrl()" type="text" id="productUrlInput" placeholder="Website Url" class="form-control ">
+<div id="nameMassage" class="alert alert-danger d-none"> Site Name or Url is not valid, Please follow the rules below :
+    Site name must contain at least 3 characters
+    Site URL must be a valid one
+    example: https:www.google.com 
+</div>
+</div>
+
+
+<button onclick="addProduct();" class=" btn-submit mt-4  text-center">  Submit</button>
+<div class="main mt-2"></div>
+
+<table class="table text-center mt-3 ">
+
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th> Visit</th>
+            <th> Delete</th>
+        </tr>
+    </thead>
+    <tbody  id="tablebody" >
+    </tbody>
+</table>
+</div>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/new.js"></script>
+</body>
+</html>
